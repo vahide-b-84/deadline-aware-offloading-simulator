@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+simpy
+openpyxl
+matplotlib
+torch
