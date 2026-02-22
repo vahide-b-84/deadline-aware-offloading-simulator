@@ -222,8 +222,7 @@ class MainLoop:
         excel_file = "homogeneous_server_info.xlsx" if self.SCENARIO_TYPE == "homogeneous" else "heterogeneous_server_info.xlsx"
         excel_file = os.path.join(DATA_DIR, excel_file)
 
-        # NEW: single sheet (no FAILURE_STATE). Prefer "Servers".
-        # If your excel still uses another sheet name, change it here once.
+        # NEW: single sheet (no FAILURE_STATE): "Servers".
         sheet_name = "Servers"
 
         server_info_df = pd.read_excel(excel_file, sheet_name=sheet_name)
